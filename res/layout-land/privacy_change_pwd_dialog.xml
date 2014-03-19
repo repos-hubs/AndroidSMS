@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingTop="0dip">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical" android:paddingBottom="15dip"
+		android:layout_width="300dip">
+
+
+		<LinearLayout android:gravity="center"
+			android:layout_height="45dp" android:layout_width="fill_parent"
+			android:background="@drawable/green_dialog_bg_top">
+			<ImageView android:layout_marginRight="5dp"
+				android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+			<TextView android:id="@+id/title_text_tv"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/privacy_change_pwd_title" android:textColor="@color/white"
+				android:textSize="24sp"></TextView>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:gravity="center_horizontal" android:layout_weight="1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/dialog_bg_bottom" android:paddingTop="5dp">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_weight="1">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					<LinearLayout android:layout_height="wrap_content"
+						android:paddingLeft="5dp" android:paddingRight="5dp"
+						android:layout_width="fill_parent">
+						<EditText android:layout_weight="1" android:paddingLeft="6dip"
+							android:layout_width="fill_parent" android:paddingRight="3dip"
+							android:singleLine="true" android:hint="@string/privacy_change_pwd_input_prompt"
+							android:layout_height="40dip" android:password="true"
+							android:id="@+id/privacy_pwd_et" android:paddingTop="3dip"
+							android:paddingBottom="3dip" android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp" android:maxLength="4" android:inputType="number">
+							<requestFocus></requestFocus>
+						</EditText>
+					</LinearLayout>
+				</RelativeLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:paddingLeft="5dp" android:paddingRight="5dp"
+					android:layout_height="wrap_content">
+					<EditText android:layout_weight="1" android:paddingLeft="6dip"
+						android:layout_width="fill_parent" android:paddingRight="3dip"
+						android:singleLine="true" android:hint="@string/privacy_change_pwd_input_confirm"
+						android:layout_height="40dip" android:password="true"
+						android:id="@+id/privacy_pwd_confirm_et" android:paddingTop="3dip"
+						android:paddingBottom="3dip" android:layout_marginLeft="5dp"
+						android:layout_marginRight="5dp" android:inputType="number" android:maxLength="4"></EditText>
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:paddingLeft="12dp" android:gravity="left"
+					android:layout_height="wrap_content" android:visibility="gone">
+					<CheckBox android:layout_width="wrap_content"
+						android:button="@drawable/green_checkbox_button" android:paddingLeft="25dp"
+						android:text="@string/show_pwd_prompt" android:id="@+id/privacy_show_pwd_cb"
+						android:layout_height="wrap_content" android:background="@null"
+						android:textColor="@color/black"></CheckBox>
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="5dp"
+					android:layout_width="wrap_content" android:paddingLeft="3dip"
+					android:paddingRight="3dip" android:layout_height="wrap_content">
+					<View android:layout_width="fill_parent" android:background="@drawable/fengexian"
+						android:layout_height="1dp"></View>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_marginTop="8dip" android:gravity="center_horizontal"
+				android:layout_gravity="center_horizontal" android:layout_width="fill_parent"
+				android:layout_marginBottom="12dp">
+				<Button android:text="@android:string/ok" android:id="@+id/button_ok"
+					android:padding="5dp" android:layout_marginBottom="2dp"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:background="@drawable/green_button_bg_main_selector"
+					android:layout_width="wrap_content" style="@style/TextShadowStyle"
+					android:textSize="22sp" android:gravity="center"></Button>
+				<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+					android:padding="5dp" android:layout_marginLeft="10dp"
+					android:layout_marginBottom="2dp" android:layout_height="wrap_content"
+					android:textColor="@color/black" android:gravity="center"
+					android:background="@drawable/green_button_bg_main_selector"
+					android:layout_width="wrap_content" style="@style/TextShadowStyle"
+					android:textSize="22sp"></Button>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

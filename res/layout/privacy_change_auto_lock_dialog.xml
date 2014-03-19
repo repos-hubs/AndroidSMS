@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingTop="0dip">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_width="wrap_content">
+
+
+		<LinearLayout android:gravity="center"
+			android:layout_width="fill_parent" android:background="@drawable/dialog_bg_top"
+			android:layout_height="wrap_content">
+			<ImageView android:layout_marginRight="5dp"
+				android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="2dp"></ImageView>
+			<TextView android:id="@+id/title_text_tv"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				style="@style/TextShadowStyle"
+				android:textColor="@color/black" android:text="@string/privacy_set_auto_lock"
+				android:textSize="24sp"></TextView>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:gravity="center_horizontal" android:layout_weight="1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@drawable/dialog_bg_bottom">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:orientation="vertical" android:layout_weight="1">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:textColor="@color/black" android:paddingLeft="5dp"
+					android:paddingRight="5dp" android:text="@string/privacy_set_auto_lock_prompt"
+					android:textSize="17sp"></TextView>
+				<ListView android:layout_weight="1" android:layout_width="fill_parent"
+					android:id="@+id/privacy_auto_lock_list" android:layout_marginTop="5dp"
+					android:paddingLeft="5dp" android:paddingRight="5dp"
+					android:layout_height="150dp" android:divider="@drawable/sms_separator_line"
+					android:cacheColorHint="#00000000"></ListView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingLeft="3dip"
+				android:paddingRight="3dip" android:layout_marginTop="5dp"
+				android:layout_marginBottom="5dp">
+
+				<View android:layout_width="fill_parent" android:layout_height="1dp"
+					android:background="@drawable/fengexian"></View>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:gravity="center_horizontal" android:layout_gravity="center_horizontal"
+				android:layout_width="fill_parent" android:layout_marginBottom="12dp">
+				<Button android:text="@android:string/cancel" android:id="@+id/button_cancel"
+					android:layout_marginLeft="10dp" android:layout_height="wrap_content"
+					style="@style/TextShadowStyle"
+					android:textColor="@color/black" android:background="@drawable/button_bg_main_selector"
+					android:textSize="22sp" android:layout_width="wrap_content"
+					android:layout_marginBottom="12dp" android:gravity="center"></Button>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:paddingTop="0dip">
+
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+		android:background="@drawable/green_dialog_bg_top" 
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		<TextView android:id="@+id/title_tv" 
+		    android:paddingTop="3dip" 
+			android:textSize="24sp"
+			android:layout_width="wrap_content" 
+			android:gravity="center"
+			android:text="@string/menu_setting_signature_cotent"
+			android:layout_height="wrap_content" android:textColor="@color/white"/>
+	</LinearLayout>
+
+
+	<LinearLayout 
+	    android:id="@+id/remark_linear"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/dialog_bg_bottom" 
+		android:orientation="vertical">
+		<LinearLayout 
+		    android:id="@+id/remark_linear"
+			android:layout_width="fill_parent" 
+			android:paddingLeft="8dip"
+			android:paddingRight="8dip" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp" 
+			android:orientation="vertical"
+			android:gravity="center">
+			
+			<EditText 
+			    android:lines="1" 
+			    android:layout_height="wrap_content"
+				android:singleLine="true" 
+				android:layout_width="fill_parent"
+				android:layout_weight="1" 
+				android:id="@+id/input_et" 
+				android:maxLength="30"/>
+		</LinearLayout>
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/menu_setting_dialog_desc"
+		    android:textColor="@color/black"
+		    android:textSize="15sp"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="8dp"/>
+		<LinearLayout 
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical">
+		    <ImageView 
+		        android:src="@drawable/sms_messenger_dialogue_radio_unselect"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="8dp"
+		        android:id="@+id/radioImageView"
+		        android:layout_marginLeft="15dp"/>
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/menu_setting_support_desc"
+		        android:textSize="15sp"
+		        android:textColor="@color/black"
+		        android:paddingLeft="5dp"/>
+		</LinearLayout>
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal" 
+			android:layout_marginBottom="12dp">
+			<Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sms_contact_confirm"
+                android:id="@+id/confirmButton"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                style="@style/TextShadowStyle"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/green_button_bg_main_selector" android:textColor="@color/black"/>
+			<Button 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sms_contact_cancel"
+                android:id="@+id/cancelButton"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                style="@style/TextShadowStyle"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/green_button_bg_main_selector" android:textColor="@color/black"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

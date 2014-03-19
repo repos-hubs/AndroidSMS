@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/bg_color">
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/imageView4"
+		android:src="@drawable/fengexian"></ImageView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_marginTop="1dp">
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:layout_weight="1" android:gravity="center"
+			android:id="@+id/privacy_message_menu_delete">
+			<ImageView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:src="@drawable/red_privacy_contact_menu_delete"></ImageView>
+			<TextView android:textColor="@color/light_black"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="@string/privacy_contact_menu_delete_action" android:textSize="17sp"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:visibility="gone">
+			<ImageView android:background="@color/light_black"
+				android:layout_width="1dp" android:layout_height="fill_parent"></ImageView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:layout_weight="1" android:gravity="center"
+			android:id="@+id/privacy_message_menu_restore" android:visibility="gone">
+			<ImageView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:src="@drawable/privacy_message_menu_restore"></ImageView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/privacy_message_menu_restore"
+				android:textColor="@color/light_black"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_height="50dp" android:padding="5dp"
+	android:id="@+id/privacy_messages_list_item_root_linear">
+	<LinearLayout android:gravity="center_vertical"
+		android:layout_width="wrap_content" android:layout_weight="1"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+			<TextView android:layout_width="wrap_content" android:singleLine="true" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:textColor="@color/light_black" android:textSize="17sp" android:id="@+id/privacy_messages_list_item_contact_tv"></TextView>
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/light_black" android:id="@+id/privacy_messages_list_item_num_tv" android:layout_marginLeft="8dp"></TextView>
+		</LinearLayout>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/privacy_messages_list_item_contact_address_tv" android:textColor="@color/grey"></TextView>
+	</LinearLayout>
+	<RelativeLayout android:layout_marginTop="3dp"
+		android:layout_width="fill_parent" android:layout_weight="1"
+		android:layout_height="wrap_content">
+		<TextView android:layout_alignParentLeft="true"
+			android:singleLine="true" android:id="@+id/privacy_messages_list_item_msg_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="@color/grey" android:layout_toLeftOf="@+id/privacy_messages_list_item_date_tv" android:layout_centerVertical="true"></TextView>
+		<TextView android:id="@+id/privacy_messages_list_item_date_tv"
+			android:layout_width="wrap_content" android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" android:textColor="@color/grey" android:layout_marginLeft="3dp" android:singleLine="true" android:layout_centerVertical="true"></TextView>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:orientation="vertical" android:focusable="false"
+		android:focusableInTouchMode="false" android:clickable="false">
+	</LinearLayout>
+
+</LinearLayout>

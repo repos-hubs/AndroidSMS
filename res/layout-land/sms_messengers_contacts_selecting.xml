@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@color/white">
+	<LinearLayout android:focusable="true"
+		android:focusableInTouchMode="true" android:layout_width="0px"
+		android:layout_height="0px" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/headerLaout"
+		android:background="@drawable/green_sms_dialogue_details_header_bg">
+		<EditText android:id="@+id/contactsEditText"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:hint="@string/hint_contact_name_edit_text"
+			android:layout_centerVertical="true" android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp" android:paddingLeft="30dp"
+			android:singleLine="true" android:background="@drawable/green_sms_add_contact_edit_text_bg" />
+
+		<ImageView android:id="@+id/searchImageView"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/contactsEditText"
+			android:layout_alignTop="@+id/contactsEditText"
+			android:layout_alignBottom="@+id/contactsEditText" android:src="@drawable/sms_add_contact_search_icon"
+			android:padding="3dp" android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/green_sms_messenger_dialogue_detail_bg">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/contactsLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/contactsImageView"
+				android:src="@drawable/green_sms_add_contact_contacts_off" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_contact_contacts"
+				android:id="@+id/contactsTextView" android:textSize="18sp" android:textStyle="bold" android:textColor="@drawable/green_sms_contacts_select_tab_title_selector"/>
+		</LinearLayout>
+		<ImageView android:background="@color/white"
+			android:layout_width="1px" android:layout_height="fill_parent" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/groupsLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/groupsImageView"
+				android:src="@drawable/green_sms_add_contact_group_off" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_contact_groups"
+				android:id="@+id/groupsTextView" android:textSize="18sp" android:textStyle="bold" android:textColor="@drawable/green_sms_contacts_select_tab_title_selector"/>
+		</LinearLayout>
+		<ImageView android:background="@color/white"
+			android:layout_width="1px" android:layout_height="fill_parent" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/recentLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/recentImageView"
+				android:src="@drawable/green_sms_add_contact_recently_off" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_contact_recently"
+				android:id="@+id/recentTextView" android:textSize="18sp" android:textStyle="bold" android:textColor="@drawable/green_sms_contacts_select_tab_title_selector"/>
+		</LinearLayout>
+	</LinearLayout>
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:id="@+id/contactsListView" android:scrollbars="none" android:cacheColorHint="#00000000"
+		android:focusable="false" />
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:scaleType="fitXY"
+			android:src="@drawable/sms_separator_line" />
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingTop="5dp" android:paddingBottom="5dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:gravity="center_vertical|center_horizontal">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/sms_contact_confirm"
+					android:id="@+id/confirmButton" android:textSize="20sp"
+					android:textColor="@color/black" android:textStyle="bold"
+					style="@style/TextShadowStyle" android:gravity="center_vertical|center_horizontal"
+					android:background="@drawable/green_button_bg_main_selector" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:gravity="center_vertical|center_horizontal">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/sms_contact_cancel"
+					android:id="@+id/cancelButton" android:textSize="20sp"
+					android:textColor="@color/black" android:textStyle="bold"
+					style="@style/TextShadowStyle" android:gravity="center_vertical|center_horizontal"
+					android:background="@drawable/green_button_bg_main_selector" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

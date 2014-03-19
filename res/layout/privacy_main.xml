@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:background="@drawable/privacy_bg" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/privacy_lock_linear" android:background="@drawable/privacy_bg"
+		android:gravity="center_horizontal" android:layout_marginTop="10dp">
+		<LinearLayout android:orientation="vertical"
+			android:layout_marginTop="10dp" android:layout_width="wrap_content"
+			android:background="@drawable/privacy_suo" android:gravity="bottom|center_horizontal"
+			android:layout_height="wrap_content">
+			<EditText android:layout_marginBottom="40dp"
+				android:hint="@string/privacy_lock_pwd_input_hint" android:id="@+id/privacy_lock_pwd_et"
+				android:layout_marginLeft="10dp" android:layout_height="wrap_content"
+				android:inputType="number" android:textColorHint="@color/light_yellow"
+				android:background="@drawable/privacy_input" android:layout_width="fill_parent"
+				android:textSize="22sp" android:maxLength="4" android:imeOptions="actionDone"
+				android:imeActionLabel="@string/privacy_unlock_ime_action_label"
+				android:layout_marginRight="10dp" android:password="true">
+				<requestFocus></requestFocus>
+			</EditText>
+		</LinearLayout>
+
+	</LinearLayout>
+	<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent"
+		android:background="@drawable/privacy_bg" android:layout_height="fill_parent"
+		android:visibility="gone">
+		<LinearLayout android:orientation="vertical"
+			android:layout_height="fill_parent" android:background="@drawable/privacy_bg"
+			android:padding="5dp" android:layout_width="fill_parent" android:id="@+id/privacy_main_linear">
+			<LinearLayout android:layout_width="fill_parent"
+				android:background="@drawable/privacy_tab_bg" android:layout_height="wrap_content">
+				<LinearLayout android:layout_width="wrap_content"
+					android:gravity="center" android:layout_height="fill_parent"
+					android:layout_weight="1" android:id="@+id/privacy_messages_linear"
+					android:background="@drawable/privacy_tab01_linear">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/privacy_tab01_image"
+						android:background="@drawable/privacy_tab01_iv"></ImageView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:gravity="center" android:layout_height="fill_parent"
+					android:layout_weight="1" android:id="@+id/privacy_phones_linear"
+					android:background="@drawable/privacy_tab02_linear">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/privacy_tab02_image"
+						android:background="@drawable/privacy_tab02_iv"></ImageView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:gravity="center" android:layout_height="fill_parent"
+					android:layout_weight="1" android:id="@+id/privacy_contacts_linear"
+					android:background="@drawable/privacy_tab03_linear">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/privacy_tab03_image"
+						android:background="@drawable/privacy_tab03_iv"></ImageView>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:gravity="center" android:layout_height="fill_parent"
+					android:layout_weight="1" android:id="@+id/privacy_settings_linear"
+					android:background="@drawable/privacy_tab04_linear">
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:id="@+id/privacy_tab04_image"
+						android:background="@drawable/privacy_tab04_iv"></ImageView>
+				</LinearLayout>
+			</LinearLayout>
+			<TabWidget android:layout_width="fill_parent"
+				android:visibility="gone" android:layout_height="wrap_content"
+				android:id="@android:id/tabs">
+				<LinearLayout android:orientation="vertical"
+					android:layout_height="fill_parent" android:background="@drawable/privacy_bg"
+					android:layout_width="fill_parent"></LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_height="fill_parent" android:background="@drawable/privacy_bg"
+					android:layout_width="fill_parent"></LinearLayout>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent" android:background="@drawable/privacy_bg"
+					android:layout_height="fill_parent"></LinearLayout>
+			</TabWidget>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<FrameLayout android:id="@android:id/tabcontent"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"></FrameLayout>
+				<LinearLayout android:background="@drawable/privacy_bg"
+					android:layout_height="5dip" android:layout_width="fill_parent"></LinearLayout>
+			</RelativeLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_marginTop="3dp" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			</LinearLayout>
+		</LinearLayout>
+	</TabHost>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="vertical"
+		android:background="@drawable/privacy_bg">
+	</LinearLayout>
+</LinearLayout>

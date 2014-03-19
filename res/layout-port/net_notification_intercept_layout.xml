@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/white">
+	<ImageView android:src="@drawable/icon"
+		android:layout_margin="5dp" android:layout_width="50dip"
+		android:layout_height="50dip" />
+
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="center">
+
+		<TextView android:id="@+id/no_read_tag_tv" android:textSize="18sp"
+			android:layout_marginLeft="15dip" android:text="@string/has_not_read_sms"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/intercept_tag_tv" android:text="@string/intercept_sms"
+			android:layout_alignTop="@id/no_read_tag_tv"
+			android:layout_marginLeft="40dip" android:layout_toRightOf="@id/no_read_tag_tv"
+			android:layout_width="wrap_content" android:textSize="18sp"
+			android:layout_height="wrap_content" />
+		<TextView android:id="@+id/no_read_sum_tv"
+			android:layout_marginTop="1dip" android:paddingLeft="30dip"
+			android:textColor="@color/black" android:textSize="22sp"
+			android:layout_below="@id/no_read_tag_tv" android:layout_alignLeft="@id/no_read_tag_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/intercept_sum_tv"
+			android:layout_marginTop="1dip" android:paddingLeft="30dip"
+			android:textColor="@color/black" android:textSize="22sp"
+			android:layout_below="@id/intercept_tag_tv" android:layout_alignLeft="@id/intercept_tag_tv"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</RelativeLayout>
+
+
+</LinearLayout>

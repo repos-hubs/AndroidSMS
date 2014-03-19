@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/red_sms_dialogue_details_header_bg"
+		android:gravity="center">
+		<TextView android:textColor="@color/white"
+			android:text="@string/privacy_settings_auto_msg_content"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold" android:textSize="24sp"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="fill_parent"
+		android:background="@color/bg_color">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="right"
+			android:padding="5dp">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/privacy_add_auto_msg_button"
+				android:text="@string/button_add_text" android:background="@drawable/red_button_bg_main_selector"
+				android:textSize="22sp" style="@style/TextShadowStyle" android:gravity="center" android:textColor="@color/light_black"></Button>
+		</LinearLayout>
+		<View android:layout_width="fill_parent" android:layout_height="1dp"
+			android:background="@drawable/fengexian"></View>
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="vertical" android:layout_height="fill_parent">
+			<ListView android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:id="@+id/privacy_auto_msg_list"
+				android:cacheColorHint="#00000000" android:divider="@drawable/sms_separator_line"
+				android:scrollbars="none"></ListView>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

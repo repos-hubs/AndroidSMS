@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:background="@color/green_bg_color" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:weightSum="5">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:id="@+id/classifyLayout"
+			android:layout_weight="2" android:visibility="gone">
+			<!-- <include layout="@layout/sms_messengers_classify" android:layout_weight="1" 
+				/> -->
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="1">
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:background="@drawable/red_sms_classify_layout_bg">
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:text="@string/favorite_contact_person"
+						android:textSize="15sp" android:textStyle="bold" android:gravity="center_vertical|left"
+						android:id="@+id/contactPerson" android:textColor="@color/grey"
+						android:background="@drawable/sms_classify_bar" />
+
+					<ListView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/favoriteContactPersonListView"
+						android:divider="@drawable/sms_separator_line" android:scrollbars="none"
+						android:cacheColorHint="#00000000" android:layout_below="@+id/contactPerson"
+						android:layout_above="@+id/historySmsLayout" />
+					<LinearLayout android:orientation="vertical"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:id="@+id/historySmsLayout" android:gravity="center_horizontal|center_vertical"
+						android:layout_alignParentBottom="true" android:background="@color/white">
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/history_sms_browse_msg"
+							android:textSize="15sp" android:textStyle="bold" android:gravity="center_vertical|left"
+							android:textColor="@color/grey" android:background="@drawable/sms_classify_bar" />
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/history_yesterday_msg"
+							android:textColor="@color/black" android:textSize="18sp"
+							android:textStyle="bold" android:padding="5dp" android:gravity="center_vertical|left"
+							android:id="@+id/hisYesterdayTextView" />
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/history_last_week_msg"
+							android:textColor="@color/black" android:textSize="18sp"
+							android:textStyle="bold" android:padding="5dp" android:gravity="center_vertical|left"
+							android:id="@+id/hisLastWeekTextView" />
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/history_last_month_msg"
+							android:textColor="@color/black" android:textSize="18sp"
+							android:textStyle="bold" android:padding="5dp" android:gravity="center_vertical|left"
+							android:id="@+id/hisLastMonthTextView" />
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/history_half_year_msg"
+							android:textColor="@color/black" android:textSize="18sp"
+							android:textStyle="bold" android:padding="5dp" android:gravity="center_vertical|left"
+							android:id="@+id/hisHalfYearTextView" />
+						<TextView android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/history_more_msg"
+							android:textSize="18sp" android:textStyle="bold" android:padding="5dp"
+							android:gravity="center_vertical|left" android:id="@+id/hisMoreTextView"
+							android:textColor="@color/black" />
+
+					</LinearLayout>
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:id="@+id/smsMessageLayout" android:layout_weight="3">
+			<!-- <include layout="@layout/sms_messengers_header" /> -->
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<RelativeLayout android:layout_width="fill_parent"
+						android:id="@+id/contentLayout" android:background="@drawable/red_sms_dialogue_details_header_bg"
+						android:layout_height="50dp">
+
+						<ImageView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:layout_marginTop="4dip"
+							android:paddingLeft="2dp" android:paddingBottom="2dp"
+							android:layout_marginLeft="10dp" android:id="@+id/classifySmsImageView"
+							android:background="@drawable/red_tab_control_icon_selector"
+							android:layout_centerVertical="true" />
+						<LinearLayout android:orientation="vertical" android:layout_marginLeft="-13dip"
+							android:layout_width="wrap_content" android:layout_toRightOf="@id/classifySmsImageView"
+							android:gravity="bottom" android:layout_alignBottom="@+id/contentLayout"
+							android:layout_height="fill_parent">
+							<LinearLayout android:orientation="horizontal"
+								android:layout_height="wrap_content" android:gravity="bottom|center_horizontal"
+								android:id="@+id/titleLayout" android:background="@drawable/red_sms_dialogue_title_bg"
+								android:layout_width="wrap_content">
+								<TextView android:layout_height="fill_parent"
+									android:text="@string/sms_dialogue_title_msg"
+									android:layout_width="wrap_content" android:textStyle="bold"
+									android:id="@+id/smsTabTitleTextView" android:paddingTop="5dp"
+									android:paddingBottom="5dp" android:textSize="18sp"
+									android:gravity="center_vertical" android:paddingLeft="5dp"
+									android:paddingRight="8dp" android:textColor="@color/red"></TextView>
+
+								<!-- <ImageView android:layout_height="wrap_content" android:layout_gravity="center_vertical" 
+									android:layout_width="wrap_content" android:id="@+id/tabControlImageView" 
+									android:padding="5dp" android:background="@drawable/green_tab_control_icon"></ImageView> -->
+							</LinearLayout>
+						</LinearLayout>
+						<!-- <ImageView android:src="@drawable/sms_messenger_operations_icon" 
+							android:layout_width="wrap_content" android:layout_height="wrap_content" 
+							android:paddingTop="4dp" android:paddingLeft="2dp" android:paddingRight="2dp" 
+							android:paddingBottom="2dp" android:id="@+id/smsDialogueOperationImageView" 
+							android:layout_toLeftOf="@+id/smsDialogueWriteImageView"/> -->
+						<ImageView android:background="@drawable/red_sms_operation_icon_selector"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_marginTop="4dip" android:paddingLeft="2dp"
+							android:paddingRight="2dp" android:paddingBottom="2dp"
+							android:id="@+id/smsDialogueOperationImageView"
+							android:layout_toLeftOf="@+id/smsDialogueWriteImageView"
+							android:layout_centerVertical="true" />
+						<ImageView android:background="@drawable/red_sms_writen_icon_selector"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_marginTop="4dip" android:paddingLeft="2dp"
+							android:paddingRight="2dp" android:paddingBottom="2dp"
+							android:id="@+id/smsDialogueWriteImageView"
+							android:layout_alignParentRight="true"
+							
+							android:layout_centerVertical="true" />
+					</RelativeLayout>
+
+					<RelativeLayout android:id="@+id/intercept_bg_rl"
+						android:visibility="gone" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:background="@drawable/sms_intercept_bg"
+						android:gravity="center_vertical">
+
+						<ImageView android:id="@+id/close_iv"
+							android:layout_width="wrap_content" android:paddingLeft="20dip"
+							android:paddingRight="4dip" android:paddingTop="1dip"
+							android:paddingBottom="1dip" android:layout_height="wrap_content"
+							android:layout_alignParentRight="true" android:src="@drawable/icon_intercept_close" />
+
+						<TextView android:id="@+id/intercept_sum_tv"
+							android:layout_toLeftOf="@id/close_iv" android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="@string/sms_intercept_msg"
+							android:textColor="@color/light_yellow" android:textSize="12sp"
+							android:padding="3dp" android:gravity="center_vertical" />
+					</RelativeLayout>
+					<LinearLayout android:orientation="horizontal"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:id="@+id/tabContainerLayout" android:visibility="gone"
+						android:background="@drawable/red_sms_tab_func_bg">
+
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:id="@+id/dialogueLayout" android:layout_weight="1"
+							
+							android:gravity="center_vertical|center_horizontal">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:id="@+id/dialogueImageView"
+								android:background="@drawable/red_tab_dialogue_icon" />
+							<TextView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_msg"
+								android:id="@+id/dialogueTextView" android:textSize="18sp" android:padding="0dp"
+								android:textStyle="bold" android:textColor="@drawable/red_tab_title_text_color" />
+						</LinearLayout>
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:id="@+id/collectionLayout" android:layout_weight="1"
+							
+							android:gravity="center_vertical|center_horizontal">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:id="@+id/collectionImageView"
+								android:background="@drawable/red_tab_collection_icon" />
+							<TextView android:layout_width="wrap_content" android:padding="0dp"
+								android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_collection"
+								android:id="@+id/collectionTextView" android:textSize="18sp"
+								android:textStyle="bold" android:textColor="@drawable/red_tab_title_text_color" />
+						</LinearLayout>
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:id="@+id/interceptLayout" android:layout_weight="1"
+							
+							android:gravity="center_vertical|center_horizontal">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:id="@+id/interceptImageView"
+								android:background="@drawable/red_tab_interupt_icon" />
+							<TextView android:layout_width="wrap_content" android:padding="0dp"
+								android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_intercept"
+								android:id="@+id/interceptTextView" android:textSize="18sp"
+								android:textStyle="bold" android:textColor="@drawable/red_tab_title_text_color" />
+						</LinearLayout>
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:id="@+id/privacyLayout" android:layout_weight="1"
+							
+							android:gravity="center_vertical|center_horizontal">
+							<ImageView android:layout_width="wrap_content"
+								android:layout_height="wrap_content" android:id="@+id/privacyImageView"
+								android:src="@drawable/tab_privacy_icon_off" />
+							<TextView android:layout_width="wrap_content" android:padding="0dp"
+								android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_privacy"
+								android:id="@+id/privacyTextView" android:textSize="18sp"
+								android:textStyle="bold" android:textColor="@drawable/red_tab_title_text_color" />
+						</LinearLayout>
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<TabWidget android:id="@android:id/tabs"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:visibility="gone" />
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		</LinearLayout>
+	</LinearLayout>
+</TabHost>

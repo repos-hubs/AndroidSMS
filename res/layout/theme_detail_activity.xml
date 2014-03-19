@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.kindroid.kincent"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/bg_color" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:orientation="vertical">
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:layout_gravity="center_horizontal"
+				android:gravity="center_horizontal" android:orientation="vertical">
+
+				<com.kindroid.kincent.widget.CircleFlowIndicator
+					class="com.kindroid.kincent.widget.CircleFlowIndicator" android:id="@+id/theme_detail_viewflow_indication"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					app:inactiveType="fill" app:activeType="fill" app:activeColor="@color/white"
+					app:inactiveColor="@color/light_blue" android:padding="5dip"
+					android:layout_centerHorizontal="true">
+				</com.kindroid.kincent.widget.CircleFlowIndicator>
+				<com.kindroid.kincent.widget.ViewFlow
+					class="com.kindroid.kincent.widget.ViewFlow" android:id="@+id/theme_detail_viewflow"
+					android:layout_width="fill_parent" android:layout_height="fill_parent">
+				</com.kindroid.kincent.widget.ViewFlow>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentBottom="true" android:orientation="vertical"
+					android:paddingBottom="5dp" android:background="@color/bg_color">
+
+					<ImageView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_weight="1"
+						android:src="@drawable/fengexian">
+					</ImageView>
+
+					<RelativeLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:gravity="center_vertical"
+						android:padding="5dp">
+
+						<LinearLayout android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:layout_centerVertical="true" android:gravity="center_vertical"
+							android:orientation="vertical">
+
+							<TextView android:id="@+id/theme_detail_activity_theme_name_tv"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:textColor="@color/light_black" android:textSize="17sp">
+							</TextView>
+
+							<TextView android:id="@+id/theme_detail_activity_theme_version_tv"
+								android:layout_width="wrap_content" android:layout_height="wrap_content"
+								android:layout_marginTop="3dp" android:textColor="@color/light_black">
+							</TextView>
+						</LinearLayout>
+
+						<Button android:id="@+id/theme_detail_activity_enable_button"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_alignParentRight="true"
+							android:background="@drawable/button_bg_main_selector"
+							android:text="@string/theme_enable" android:layout_marginRight="3dp">
+						</Button>
+					</RelativeLayout>
+
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:gravity="center_vertical"
+						android:paddingLeft="5dp" android:paddingRight="5dp">
+
+						<TextView android:id="@+id/theme_detail_activity_theme_desp_tv"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:textColor="@color/light_black">
+						</TextView>
+					</LinearLayout>
+				</LinearLayout>
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/green_sms_classify_layout_bg">
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/favorite_contact_person"
+	    android:textSize="15sp"
+	    android:textStyle="bold"
+	    android:gravity="center_vertical|left"
+	    android:id="@+id/contactPerson" android:textColor="@color/grey" android:background="@drawable/sms_classify_bar"/>
+	
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/favoriteContactPersonListView"
+        android:divider="@drawable/sms_separator_line"
+		android:scrollbars="none"
+		android:cacheColorHint="#00000000"
+		android:layout_below="@+id/contactPerson"
+		android:layout_above="@+id/historySmsLayout"/>
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/historySmsLayout"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentBottom="true" android:background="@color/white">
+        <TextView 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:text="@string/history_sms_browse_msg"
+		    android:textSize="15sp"
+		    android:textStyle="bold"
+		    android:gravity="center_vertical|left" android:textColor="@color/grey" android:background="@drawable/sms_classify_bar"/>
+        <TextView 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:text="@string/history_yesterday_msg"
+		    android:textColor="@color/black"
+		    android:textSize="18sp"
+		    android:textStyle="bold"
+		    android:padding="5dp"
+		    android:gravity="center_vertical|left"
+		    android:id="@+id/hisYesterdayTextView"/>
+        <TextView 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:text="@string/history_last_week_msg"
+		    android:textColor="@color/black"
+		    android:textSize="18sp"
+		    android:textStyle="bold"
+		    android:padding="5dp"
+		    android:gravity="center_vertical|left"
+		    android:id="@+id/hisLastWeekTextView"/>
+        <TextView 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:text="@string/history_last_month_msg"
+		    android:textColor="@color/black"
+		    android:textSize="18sp"
+		    android:textStyle="bold"
+		    android:padding="5dp"
+		    android:gravity="center_vertical|left"
+		    android:id="@+id/hisLastMonthTextView"/>
+        <TextView 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:text="@string/history_half_year_msg"
+		    android:textColor="@color/black"
+		    android:textSize="18sp"
+		    android:textStyle="bold"
+		    android:padding="5dp"
+		    android:gravity="center_vertical|left"
+		    android:id="@+id/hisHalfYearTextView"/>
+        <TextView 
+            android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+		    android:text="@string/history_more_msg"
+		    android:textSize="18sp"
+		    android:textStyle="bold"
+		    android:padding="5dp"
+		    android:gravity="center_vertical|left"
+		    android:id="@+id/hisMoreTextView" android:textColor="@color/black"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

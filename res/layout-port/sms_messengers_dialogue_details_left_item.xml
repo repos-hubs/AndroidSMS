@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:layout_marginLeft="8dip" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_alignParentLeft="true"
+		android:background="@drawable/red_sms_dialogue_detail_blue">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/msgBodyTextView"
+			android:textColor="@color/black" android:textSize="16sp"
+			android:maxWidth="280dp" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/msgTimestampTextView"
+			android:textColor="@color/sms_dialogue_right_time" android:textSize="13sp"
+			android:maxWidth="260dp" />
+
+	</LinearLayout>
+</RelativeLayout>

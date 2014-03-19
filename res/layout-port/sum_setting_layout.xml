@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:duplicateParentState="false"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/bg_color">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center" android:layout_height="wrap_content"
+		android:background="@drawable/red_sms_dialogue_details_header_bg">
+
+		<TextView android:id="@+id/title_tv" android:gravity="center"
+			android:layout_width="fill_parent" android:textSize="24sp"
+			android:layout_height="wrap_content" android:layout_centerInParent="true"
+			android:textColor="@color/white" />
+
+
+	</LinearLayout>
+	<!-- <RelativeLayout android:layout_width="fill_parent" android:layout_weight="1" 
+		android:layout_height="fill_parent" android:padding="5dp"> <ListView android:layout_width="fill_parent" 
+		android:cacheColorHint="#00000000" android:divider="@null" android:id="@id/android:list" 
+		android:layout_alignParentTop="true" android:layout_height="fill_parent" 
+		/> </RelativeLayout> -->
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="@drawable/red_theme_bg" />
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:orientation="vertical">
+				<RelativeLayout android:layout_marginTop="10dp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<LinearLayout android:layout_toLeftOf="@+id/switchImageView"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true" android:orientation="vertical">
+						<TextView android:textSize="20sp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="@string/menu_setting_signature"
+							android:paddingLeft="5dp" android:textColor="@color/black"></TextView>
+						<TextView android:textSize="17sp" android:paddingTop="5dp"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="@string/menu_setting_signature_desc"
+							android:paddingLeft="5dp" android:textColor="@color/grey"></TextView>
+					</LinearLayout>
+					<ImageView android:id="@+id/switchImageView"
+						android:layout_centerVertical="true" android:layout_width="wrap_content"
+						android:src="@drawable/red_sum_setting_switch_icon_selector"
+						android:layout_alignParentRight="true" android:padding="8dp"
+						android:layout_height="wrap_content"></ImageView>
+				</RelativeLayout>
+				<ImageView android:layout_marginTop="5dp"
+					android:layout_height="wrap_content" android:src="@drawable/sms_separator_line"
+					android:layout_width="fill_parent"></ImageView>
+			</LinearLayout>
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/dropdownContentLayout" android:layout_width="fill_parent"
+				android:orientation="vertical">
+				<RelativeLayout android:layout_marginTop="10dp"
+					android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<LinearLayout android:layout_toLeftOf="@+id/switchLayout"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true" android:orientation="vertical">
+						<TextView android:textSize="20sp" android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:text="@string/menu_setting_signature_cotent"
+							android:paddingLeft="5dp"
+							android:textColor="@drawable/red_sum_setting_content_sigtv_selector"
+							android:id="@+id/signatureContentTitleTextView"></TextView>
+						<TextView android:textSize="17sp" android:paddingTop="5dp"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:text="@string/menu_setting_signature_cotent_desc"
+							android:paddingLeft="5dp" android:textColor="@color/grey"></TextView>
+					</LinearLayout>
+					<ImageView android:id="@+id/dropdownImageView"
+						android:layout_centerVertical="true" android:layout_width="wrap_content"
+						android:src="@drawable/red_sum_setting_dropdown_icon_selector"
+						android:layout_alignParentRight="true" android:padding="8dp"
+						android:layout_height="wrap_content" android:layout_marginRight="8dp"></ImageView>
+				</RelativeLayout>
+				<ImageView android:layout_marginTop="5dp"
+					android:layout_height="wrap_content" android:layout_marginBottom="5dp"
+					android:src="@drawable/sms_separator_line" android:layout_width="fill_parent"></ImageView>
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

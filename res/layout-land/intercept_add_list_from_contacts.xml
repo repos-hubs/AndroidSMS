@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:duplicateParentState="false"
+	android:background="@color/bg_color">
+
+
+
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center" android:layout_height="wrap_content"
+		android:background="@drawable/green_sms_dialogue_details_header_bg">
+
+		<TextView android:id="@+id/activity_title_tv"
+			android:textSize="24sp" android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="@color/white" android:text="@string/add_white_list" />
+
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:gravity="center_vertical" android:padding="6dp">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_weight="1" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginLeft="3dip" android:textColor="@color/light_black"
+				android:layout_height="wrap_content" android:id="@+id/contacts_sum"
+				android:text="@string/contacts_exist" />
+
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp">
+			<LinearLayout android:id="@+id/add_list_linear" 
+				android:layout_width="wrap_content" android:background="@drawable/green_button_bg_main_selector"
+				android:layout_height="wrap_content" android:padding="5dip"
+				android:gravity="center">
+				<!-- <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:src="@drawable/add_white_icon" /> -->
+				<TextView android:layout_width="wrap_content"
+					android:singleLine="true" android:layout_marginLeft="3dip"
+					android:layout_height="wrap_content" android:paddingLeft="5dip"
+					android:paddingRight="5dip" android:textColor="@color/black"
+					android:gravity="center" android:textSize="18sp"
+					android:text="@string/add_white_list" android:id="@+id/add_list_action_tv" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<!-- <ImageView android:src="@drawable/virus_scan_line01" android:layout_width="match_parent" 
+		android:layout_height="1dp"></ImageView> -->
+	<LinearLayout android:layout_width="fill_parent"
+		android:paddingLeft="5dip" android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" android:gravity="center_vertical">
+
+		<LinearLayout android:layout_weight="1"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+		</LinearLayout>
+		<LinearLayout android:gravity="right"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginRight="5dp">
+
+			<TextView android:layout_width="wrap_content"
+				android:textColor="@color/light_black" android:layout_marginRight="5dip"
+				android:layout_height="wrap_content" android:text="@string/all_select" />
+			<CheckBox android:id="@+id/select_al_cb"
+				android:layout_marginLeft="10dip" android:layout_height="40dip"
+				android:focusable="false" android:padding="5dip" android:textColor="@color/black"
+				android:text="      " android:background="@null" android:button="@drawable/green_checkbox_button"
+				android:layout_width="40dip" android:gravity="center" />
+		</LinearLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1"
+		android:padding="5dp">
+		<ListView android:layout_width="fill_parent"
+			android:cacheColorHint="#00000000" android:divider="@null"
+			android:id="@id/android:list" android:layout_height="wrap_content" />
+	</RelativeLayout>
+
+
+</LinearLayout>

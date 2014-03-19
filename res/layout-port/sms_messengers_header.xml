@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/contentLayout" android:background="@drawable/green_sms_dialogue_details_header_bg"
+		android:layout_height="55dp">
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:paddingTop="4dp"
+			android:paddingLeft="2dp" android:paddingBottom="2dp"
+			android:id="@+id/classifySmsImageView" android:background="@drawable/green_sms_messengers_classify_iv"
+			android:layout_centerVertical="true" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_toRightOf="@+id/classifySmsImageView"
+			android:gravity="bottom" android:layout_alignBottom="@+id/contentLayout"
+			android:layout_height="fill_parent">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_height="wrap_content" android:id="@+id/titleLayout"
+				android:background="@drawable/green_sms_dialogue_title_bg"
+				android:layout_width="wrap_content" android:gravity="center">
+				<TextView android:layout_height="fill_parent"
+					android:text="@string/sms_dialogue_title_msg" android:layout_width="wrap_content"
+					android:textStyle="bold" android:id="@+id/smsTabTitleTextView"
+					android:textColor="@color/dark_green" android:gravity="center"
+					android:layout_marginRight="3dp" android:textSize="20sp"></TextView>
+				<!-- 
+				<ImageView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/tabControlImageView"
+					android:background="@drawable/green_tab_control_icon"
+					android:visibility="gone"></ImageView>
+				-->
+			</LinearLayout>
+		</LinearLayout>
+		<!-- <ImageView android:src="@drawable/sms_messenger_operations_icon" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" android:paddingTop="4dp" android:paddingLeft="2dp" 
+			android:paddingRight="2dp" android:paddingBottom="2dp" android:id="@+id/smsDialogueOperationImageView" 
+			android:layout_toLeftOf="@+id/smsDialogueWriteImageView"/> -->
+		<ImageView android:src="@drawable/green_sms_operation_icon_selector"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingTop="4dp" android:paddingLeft="2dp"
+			android:paddingRight="2dp" android:paddingBottom="2dp"
+			android:id="@+id/smsDialogueOperationImageView"
+			android:layout_toLeftOf="@+id/smsDialogueWriteImageView"
+			android:layout_centerVertical="true" />
+		<ImageView android:src="@drawable/green_sms_writen_icon_selector"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingLeft="2dp" android:paddingRight="2dp"
+			android:paddingBottom="2dp" android:paddingTop="4dp"
+			android:id="@+id/smsDialogueWriteImageView"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+	</RelativeLayout>
+
+	<RelativeLayout android:id="@+id/intercept_bg_rl"
+		android:visibility="gone" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@drawable/sms_intercept_bg"
+		android:gravity="center_vertical">
+
+		<ImageView android:id="@+id/close_iv" android:layout_width="wrap_content"
+			android:paddingLeft="20dip" android:paddingRight="4dip"
+			android:paddingTop="1dip" android:paddingBottom="1dip"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:src="@drawable/icon_intercept_close" />
+
+		<TextView android:id="@+id/intercept_sum_tv"
+			android:layout_toLeftOf="@id/close_iv" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/sms_intercept_msg"
+			android:textColor="@color/light_yellow" android:textSize="12sp"
+			android:padding="3dp" android:gravity="center_vertical" />
+	</RelativeLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/tabContainerLayout" android:visibility="gone"
+		android:background="@drawable/green_sms_tab_func_bg">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/dialogueLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/dialogueImageView"
+				android:background="@drawable/green_tab_dialogue_icon" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_msg"
+				android:id="@+id/dialogueTextView" android:textSize="18sp"
+				android:textStyle="bold" android:textColor="@drawable/green_tab_title_text_color" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/collectionLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/collectionImageView"
+				android:background="@drawable/green_tab_collection_icon" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_collection"
+				android:id="@+id/collectionTextView" android:textSize="18sp"
+				android:textStyle="bold" android:textColor="@drawable/green_tab_title_text_color" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/interceptLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/interceptImageView"
+				android:background="@drawable/green_tab_interupt_icon" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_intercept"
+				android:id="@+id/interceptTextView" android:textSize="18sp"
+				android:textStyle="bold" android:textColor="@drawable/green_tab_title_text_color" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/privacyLayout" android:layout_weight="1"
+			android:paddingTop="5dp" android:paddingBottom="5dp"
+			android:gravity="center_vertical|center_horizontal">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/privacyImageView"
+				android:src="@drawable/tab_privacy_icon_off" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/sms_dialogue_title_privacy"
+				android:id="@+id/privacyTextView" android:textSize="18sp"
+				android:textStyle="bold" android:textColor="@drawable/green_tab_title_text_color" />
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

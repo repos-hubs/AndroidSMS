@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center_vertical" android:focusable="false"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginRight="5dp" android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true" android:focusable="false"
+		android:background="@drawable/red_sms_dialogue_messenger_item_bg"
+		android:gravity="center_vertical">
+		<RadioButton android:button="@drawable/red_radio_button_bg"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/radioButtonImageView" android:visibility="gone"
+			android:layout_marginLeft="8dp"  />
+		<ImageView android:id="@+id/contactIconImageView"
+			android:focusable="false" android:layout_height="55dp"
+			android:layout_width="55dp" android:src="@drawable/red_sms_contact_profile" />
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="vertical" android:id="@+id/itemContentLayout"
+			android:focusable="false" android:layout_gravity="center_vertical"
+			android:layout_height="wrap_content">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:gravity="center_vertical">
+				<TextView android:layout_height="wrap_content"
+					android:layout_marginTop="2dip" android:layout_width="wrap_content"
+					android:id="@+id/locationTextView" android:textColor="@color/light_black_text_color"
+					android:textSize="15sp" android:layout_marginLeft="5dp"
+					android:layout_alignParentRight="true" android:layout_gravity="center_vertical"
+					android:layout_marginRight="10dp" android:focusable="false" />
+
+				<TextView android:layout_height="wrap_content"
+					android:layout_marginTop="2dip" android:singleLine="true"
+					android:layout_width="wrap_content" android:id="@+id/draftTextView"
+					android:textColor="@color/red" android:gravity="bottom"
+					android:paddingLeft="5dp" android:textSize="15sp"
+					android:focusable="false" android:layout_toLeftOf="@id/locationTextView" />
+
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_toLeftOf="@+id/draftTextView">
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:id="@+id/contactDisplayNameTextView"
+						android:textColor="@color/black" android:layout_centerVertical="true"
+						android:textSize="18sp" android:focusable="false"
+						android:maxWidth="120dp" android:singleLine="true" />
+					<TextView android:layout_height="wrap_content"
+						android:layout_width="wrap_content" android:id="@+id/contactNumTextView"
+						android:textColor="@color/black" android:gravity="bottom"
+						android:paddingLeft="5dp" android:layout_centerVertical="true"
+						android:layout_toRightOf="@id/contactDisplayNameTextView"
+						android:singleLine="true" android:textSize="10sp"
+						android:focusable="false" />
+
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+				android:layout_marginTop="5dp" android:gravity="bottom">
+				<TextView android:id="@+id/messageContentTextView"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:layout_marginRight="5dp" android:layout_gravity="center_vertical"
+					android:textColor="@color/light_yellow_text_color" android:textSize="12sp"
+					android:focusable="false" android:maxWidth="180dp"
+					android:layout_toLeftOf="@+id/messageDateTextView"
+					android:singleLine="true" />
+				<TextView android:id="@+id/messageDateTextView"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_gravity="center_vertical" android:textColor="@color/light_black_text_color"
+					android:focusable="false" android:layout_alignParentRight="true"
+					android:layout_marginRight="10dp" android:singleLine="true"
+					android:textSize="12sp" />
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_gravity="bottom"
+				android:id="@+id/newArrivalLogoLayout" android:gravity="bottom">
+				<ImageView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:src="@drawable/red_sms_new_arrival_logo"
+					android:layout_alignParentRight="true" />
+			</RelativeLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

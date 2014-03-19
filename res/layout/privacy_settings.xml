@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/privacy_bg" android:scrollbars="none">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_pwd">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_change_pwd"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_display">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content"
+				android:text="@string/privacy_settings_display_name_and_icon"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_pwd_email">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_change_pwd_email"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_auto_lock">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_auto_lock"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:background="@drawable/privacy_bar"
+			android:paddingTop="3dp" android:paddingBottom="3dp" android:gravity="center_vertical"
+			android:paddingLeft="5dp">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:text="@string/privacy_settings_notify_setting"></TextView>
+		</LinearLayout>
+		<LinearLayout android:focusable="false"
+			android:orientation="horizontal" android:paddingLeft="10dp"
+			android:layout_width="fill_parent" android:paddingTop="7dp"
+			android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="7dp" android:gravity="center_vertical"
+			android:layout_height="wrap_content" android:id="@+id/privacy_settings_change_notify_for_new">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_notify_for_new"
+				android:layout_width="wrap_content" android:layout_weight="1"
+				android:textSize="18sp"></TextView>
+			<CheckBox android:background="@null"
+				android:id="@+id/privacy_settings_change_notify_for_new_cb"
+				android:layout_height="35dp" android:focusable="false"
+				android:layout_width="35dp" android:button="@drawable/checkbox_button"
+				android:layout_marginRight="5dp" android:focusableInTouchMode="false"
+				android:clickable="false"></CheckBox>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_notify_text">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_notify_text"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_message_ring">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_message_ring"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_message_notify_icon">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_message_notify_icon"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_height="wrap_content" android:text="@string/change_prompt"
+				android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_call_in_notify_icon">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_call_notify_icon"
+				android:layout_width="wrap_content" android:textSize="18sp"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:focusable="false"
+			android:orientation="horizontal" android:paddingLeft="10dp"
+			android:layout_width="fill_parent" android:paddingTop="7dp"
+			android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="7dp" android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_vibrate_notify_for_new">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_new_vibrate_prompt"
+				android:layout_width="wrap_content" android:layout_weight="1"
+				android:textSize="18sp"></TextView>
+			<CheckBox android:background="@null"
+				android:id="@+id/private_settings_change_vibrate_notify_for_new_cb"
+				android:layout_height="35dp" android:focusable="false"
+				android:layout_width="35dp" android:button="@drawable/checkbox_button"
+				android:layout_marginRight="5dp" android:focusableInTouchMode="false"
+				android:clickable="false"></CheckBox>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:focusable="false"
+			android:orientation="horizontal" android:paddingLeft="10dp"
+			android:layout_width="fill_parent" android:paddingTop="7dp"
+			android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="7dp" android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_hangup_auto_send_msg">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content"
+				android:text="@string/privacy_settings_hangup_auto_send_msg"
+				android:layout_width="wrap_content" android:layout_weight="1"
+				android:textSize="18sp"></TextView>
+			<CheckBox android:background="@null"
+				android:id="@+id/privacy_settings_change_hangup_auto_send_msg_cb"
+				android:layout_height="35dp" android:focusable="false"
+				android:layout_width="35dp" android:button="@drawable/checkbox_button"
+				android:layout_marginRight="5dp" android:focusableInTouchMode="false"
+				android:clickable="false"></CheckBox>
+		</LinearLayout>
+		<ImageView android:layout_width="fill_parent"
+			android:background="@drawable/fengexian" android:layout_height="wrap_content"></ImageView>
+		<LinearLayout android:orientation="vertical"
+			android:paddingLeft="10dp" android:layout_width="fill_parent"
+			android:paddingTop="5dp" android:background="@drawable/privacy_bg_selector"
+			android:paddingBottom="5dp" android:layout_height="wrap_content"
+			android:id="@+id/privacy_settings_change_auto_msg">
+			<TextView android:textColor="@color/black"
+				android:layout_height="wrap_content" android:text="@string/privacy_settings_auto_msg_content"
+				android:layout_width="wrap_content" android:textSize="18sp"
+				android:id="@+id/privacy_change_auto_msg_item_title_tv"></TextView>
+			<TextView android:textColor="@color/list_msg_color"
+				android:layout_marginTop="3dp" android:layout_height="wrap_content"
+				android:text="@string/change_prompt" android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

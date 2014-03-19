@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout android:id="@+id/content_linear"
+		android:background="@drawable/green_sms_dialogue_messenger_item_bg"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:focusable="false" android:gravity="center_vertical"
+		android:paddingTop="3dip" android:paddingBottom="5dip">
+		<ImageView android:id="@+id/contactIconImageView"
+			android:focusable="false" android:padding="3dp"
+			android:layout_margin="3dp" android:layout_height="60dip"
+			android:layout_width="60dip" android:background="@drawable/sms_contact_profile" />
+
+
+		<TextView android:id="@+id/contact_address_tv"
+			 android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" android:layout_marginTop="6dip"
+			android:textColor="@color/text_default_color" android:text="上海"
+			android:textSize="17sp" android:focusable="false"
+			android:layout_alignParentRight="true" android:layout_marginRight="6dip"
+			android:singleLine="true" />
+
+		<TextView android:id="@+id/contact_display_name_tv"
+			 android:layout_toRightOf="@id/contactIconImageView"
+			android:layout_toLeftOf="@id/contact_address_tv"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_marginTop="6dip" android:textColor="@color/black"
+			android:text="王娜" android:textSize="20sp" android:focusable="false"
+			android:singleLine="true" />
+
+		<TextView android:id="@+id/contact_time_tv"
+			 android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginTop="6dip"
+			android:textColor="@color/text_default_color" android:text="11/20"
+			android:textSize="17sp" android:focusable="false"
+			android:layout_alignParentRight="true" android:layout_marginRight="6dip"
+			android:layout_below="@id/contact_display_name_tv"
+			android:singleLine="true" />
+		<TextView android:id="@+id/sms_content_tv" 
+			android:layout_toRightOf="@id/contactIconImageView"
+			android:layout_toLeftOf="@id/contact_time_tv" android:layout_below="@id/contact_display_name_tv"
+			 android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:textColor="@color/text_default_color"
+			android:textSize="17sp" android:text="nihao" 
+			android:singleLine="false" />
+
+	</RelativeLayout>
+
+
+
+	<LinearLayout android:id="@+id/bottom_linear"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center_vertical" android:layout_marginTop="-2dip"
+		android:background="@drawable/green_intercept_handle_bg">
+		<TextView android:id="@+id/del_tv" android:layout_weight="1"
+			android:layout_width="fill_parent" android:singleLine="true"
+			android:textSize="18sp" android:textColor="@drawable/green_intercept_textcolor_selector"
+			android:gravity="center_horizontal" android:layout_height="wrap_content" />
+		<TextView android:id="@+id/restore_tv" android:layout_width="fill_parent"
+			android:singleLine="true" android:layout_weight="1" android:gravity="center_horizontal"
+			android:textSize="18sp" android:textColor="@drawable/green_intercept_textcolor_selector"
+			android:layout_height="wrap_content" />
+		<TextView android:id="@+id/more_tv" android:layout_width="fill_parent"
+			android:layout_weight="1" android:singleLine="true" android:gravity="center_horizontal"
+			android:textSize="18sp" android:textColor="@drawable/green_intercept_textcolor_selector"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+
+</LinearLayout>

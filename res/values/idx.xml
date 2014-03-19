@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- id for privacy_main.xml
+    <item type="id" name="privacy_lock_linear">false</item>
+    <item type="id" name="privacy_lock_pwd_et">false</item>
+    <item type="id" name="privacy_main_linear">false</item>
+    <item type="id" name="privacy_messages_linear">false</item>
+    <item type="id" name="privacy_tab01_image">false</item>
+    <item type="id" name="privacy_phones_linear">false</item>
+    <item type="id" name="privacy_tab02_image">false</item>
+    <item type="id" name="privacy_contacts_linear">false</item>
+    <item type="id" name="privacy_tab03_image">false</item>
+    <item type="id" name="privacy_settings_linear">false</item>
+    <item type="id" name="privacy_tab04_image">false</item>
+     -->
+</resources>

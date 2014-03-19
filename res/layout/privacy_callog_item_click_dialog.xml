@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+	android:gravity="center_horizontal" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingTop="0dip">
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_width="250dp"
+		android:paddingBottom="5dip">
+
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:background="@drawable/dialog_bg_top" android:layout_height="wrap_content"
+			android:gravity="center_vertical">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:textSize="24sp" style="@style/TextShadowStyle"
+				android:id="@+id/privacy_callog_item_click_dialog_title_tv"
+				android:gravity="center" android:layout_weight="1" android:singleLine="true"></TextView>
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:src="@drawable/icon_close"
+				android:layout_centerVertical="true" android:layout_marginRight="15dp"
+				android:padding="5dp" android:id="@+id/privacy_callog_item_click_dialog_close_iv"></ImageView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:background="@drawable/dialog_bg_bottom">
+			<LinearLayout android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_weight="1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:id="@+id/privacy_callog_item_click_dialog_call_linear">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingTop="3dp"
+					android:paddingBottom="3dp">
+					<LinearLayout android:layout_height="fill_parent"
+						android:orientation="vertical" android:paddingBottom="5dp"
+						android:paddingTop="5dp" android:layout_width="fill_parent"
+						android:paddingLeft="25dp">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:textColor="@color/black"
+							android:text="@string/privacy_contact_call" android:textSize="17sp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingLeft="3dip"
+					android:paddingRight="3dip">
+
+					<View android:layout_width="fill_parent"
+						android:layout_height="1dp" android:background="@drawable/fengexian"></View>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_weight="1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:id="@+id/privacy_callog_item_click_dialog_send_msg_linear">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="3dp"
+					android:paddingTop="3dp">
+					<LinearLayout android:layout_height="fill_parent"
+						android:orientation="vertical" android:paddingBottom="5dp"
+						android:paddingTop="5dp" android:layout_width="fill_parent"
+						android:paddingLeft="25dp">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:textColor="@color/black"
+							android:text="@string/privacy_contact_send_msg" android:textSize="17sp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingLeft="3dip"
+					android:paddingRight="3dip">
+
+					<View android:layout_width="fill_parent"
+						android:layout_height="1dp" android:background="@drawable/fengexian"></View>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:gravity="center_horizontal" android:layout_weight="1"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:paddingBottom="5dp"
+				android:id="@+id/privacy_callog_item_click_dialog_delete_linear">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:paddingBottom="3dp"
+					android:paddingTop="3dp">
+					<LinearLayout android:layout_height="fill_parent"
+						android:orientation="vertical" android:paddingBottom="5dp"
+						android:paddingTop="5dp" android:layout_width="fill_parent"
+						android:paddingLeft="25dp">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:textColor="@color/black"
+							android:text="@string/privacy_contact_delete" android:textSize="17sp"></TextView>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:paddingLeft="3dip"
+					android:paddingRight="3dip">
+
+					<View android:layout_width="fill_parent"
+						android:layout_height="1dp" android:background="@drawable/fengexian"></View>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ListView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:id="@+id/msgListView"
+		android:divider="@null" android:scrollbars="none"
+		android:longClickable="true" android:cacheColorHint="#00000000"
+		android:layout_above="@+id/dialogueFuncLayout" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/green_sms_classify_bg"
+		android:layout_alignParentBottom="true" android:id="@+id/dialogueFuncLayout"
+		android:gravity="center_vertical" android:visibility="gone">
+		<TextView android:id="@+id/selectAllTextView"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:text="@string/sms_dialogue_select_all"
+			android:textColor="@color/black" android:textSize="18sp"
+			style="@style/TextShadowStyle" android:gravity="center_vertical|center_horizontal" />
+		<TextView android:id="@+id/markReadTextView"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:text="@string/sms_dialogue_marked_read"
+			android:textColor="@color/black" android:textSize="18sp"
+			style="@style/TextShadowStyle" android:gravity="center_vertical|center_horizontal" />
+		<TextView android:id="@+id/deleteTextView"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:text="@string/sms_dialogue_delete"
+			android:textColor="@color/black" android:textSize="18sp"
+			android:paddingLeft="28dp" android:paddingRight="5dp"
+			style="@style/TextShadowStyle" android:gravity="center_vertical" />
+		<TextView android:id="@+id/moreTextView"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:text="@string/sms_dialogue_more"
+			android:textColor="@color/grey" android:textSize="18sp"
+			style="@style/TextShadowStyle" android:gravity="center_vertical|center_horizontal" 
+			android:visibility="invisible"/>
+	</LinearLayout>
+</RelativeLayout>

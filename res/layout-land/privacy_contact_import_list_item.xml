@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="5dp">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="center_vertical"
+		android:id="@+id/privacy_contact_import_item_linear">
+		<LinearLayout android:orientation="vertical"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:gravity="center_vertical" android:paddingLeft="5dp"
+			android:layout_toLeftOf="@+id/privacy_contact_import_item_cblinear" android:layout_alignParentLeft="true">
+			<TextView android:textColor="@color/light_black"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/privacy_contact_import_item_name_tv"></TextView>
+			<TextView android:layout_marginTop="3dp" android:textColor="@color/light_black"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/privacy_contact_import_item_desp_tv"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_alignParentRight="true"
+			android:gravity="center" android:id="@+id/privacy_contact_import_item_cblinear"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<CheckBox android:id="@+id/privacy_contact_import_item_cb"
+				android:layout_height="40dp" android:layout_width="40dp"
+				android:background="@null" android:button="@drawable/green_checkbox_button"
+				android:focusable="false" android:focusableInTouchMode="false" android:clickable="false"></CheckBox>
+		</LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

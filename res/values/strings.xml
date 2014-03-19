@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- sms list -->
+	<string name="app_name">Kincent</string>
+	<string name="sms_dialogue_title_msg">对话</string>
+	<string name="sms_dialogue_title_collection">收藏</string>
+	<string name="sms_dialogue_title_intercept">拦截</string>
+	<string name="sms_dialogue_title_privacy">隐私</string>
+	<string name="sms_intercept_msg">拦截到%1$s条短信</string>
+	<string name="favorite_contact_person">常用联系人</string>
+	<string name="history_sms_browse_msg">历史信息浏览</string>
+	<string name="history_yesterday_msg">昨天</string>
+	<string name="history_last_week_msg">上周</string>
+	<string name="history_last_month_msg">上月</string>
+	<string name="history_half_year_msg">半年前</string>
+	<string name="history_more_msg">更早...</string>
+	<string name="sms_dialogue_select_all">全选</string>
+	<string name="sms_dialogue_marked_read">标记已读</string>
+	<string name="sms_dialogue_delete">删除</string>
+	<string name="sms_dialogue_more">更多</string>
+	<string name="sms_dialog_confirm_mark">确认标记该会话为已读？</string>
+	<string name="sms_dialog_delete_thread">确认删除？</string>
+	<string name="sms_dialog_draft_msg">草稿</string>
+	<string name="sms_dialog_operation_dial">打电话</string>
+	<string name="sms_dialog_operation_sendSms">发短信</string>
+	<string name="sms_dialog_operation_add_to_black">加入黑名单</string>
+	<string name="sms_dialog_operation_add_to_white">加入白名单</string>
+	<!-- dialog sender -->
+	<string name="sms_dialogue_detail_send">发送</string>
+	<string name="hint_contact_edit_text">收件人电话</string>
+	<string name="hint_contact_name_edit_text">输入联系人姓名</string>
+	<string name="sms_contact_contacts">通讯录</string>
+	<string name="sms_contact_groups">群组</string>
+	<string name="sms_contact_recently">最近联系人</string>
+	<string name="sms_contact_sent_to_contact">To %1$s</string>
+	<string name="sms_contact_confirm">确定</string>
+	<string name="sms_contact_cancel">取消</string>
+	<string name="sms_msg_text_not_empty">短信内容不能为空</string>
+	<string name="sms_dialogue_contact_not_empty">请添加联系人</string>
+	<string name="sms_dialogue_sending">发送中</string>
+	<string name="sms_dialogue_message_copy">复制</string>
+	<string name="sms_dialogue_message_forward">转发</string>
+	<string name="sms_dialogue_send_failure">发送失败</string>
+	<string name="sms_dialogue_select_operations">选择操作</string>
+	<string name="sms_dialogue_select_category">选择分类</string>
+	<string name="sms_dialogue_detail_add_collection_first">请先添加收藏分类</string>
+
+	<string name="low_memory">Phone storage is full! Delete some files to free
+		space.</string>
+	<string name="privacy_messages_title">信息</string>
+
+	<string name="privacy_phones_title">电话</string>
+	<string name="privacy_contacts_title">联系人</string>
+	<string name="privacy_settings_title">隐私设置</string>
+	<string name="privacy_settings_change_pwd">更改隐私密码</string>
+	<string name="change_prompt">点击更改</string>
+	<string name="privacy_settings_display_name_and_icon">主界面显示名称及图标</string>
+	<string name="privacy_settings_notify_setting">隐私通知设置</string>
+	<string name="privacy_settings_notify_for_new">新内容通知</string>
+	<string name="privacy_settings_message_ring">隐私短信铃声</string>
+	<string name="privacy_settings_message_notify_icon">隐私短信通知图标</string>
+	<string name="privacy_settings_change_pwd_email">密码重置邮箱</string>
+	<string name="privacy_settings_notify_text">隐私通知文字</string>
+	<string name="privacy_settings_auto_lock">设置自动锁</string>
+	<string name="privacy_settings_call_notify_icon">隐私来电通知图标</string>
+	<string name="privacy_settings_new_vibrate_prompt">新内容震动提示</string>
+	<string name="privacy_settings_hangup_auto_send_msg">立即挂断后自动发短信</string>
+	<string name="privacy_settings_auto_msg_content">自动短信内容</string>
+	<string name="privacy_change_pwd_title">更改隐私密码</string>
+	<string name="privacy_change_pwd_input_prompt">输入密码,必填</string>
+	<string name="privacy_change_pwd_input_confirm">确认密码,必填</string>
+	<string name="show_pwd_prompt">显示密码</string>
+	<string name="pwd_confirm_not_same">密码和确认密码不一致,请重新输入!</string>
+	<string name="pwd_empty_prompt">密码不能为空!</string>
+	<string name="privacy_input_text_prompt">请输入文字(限4个字符)</string>
+	<string name="privacy_change_icon_prompt">点击更换图标</string>
+	<string name="privacy_change_text_empty_prompt">输入文字不能为空，请重新输入或取消!</string>
+	<string name="privacy_default_display_name">隐私</string>
+	<string name="privacy_reset_pwd_email">请输入接收重置密码的邮箱地址</string>
+	<string name="privacy_email_empty_prompt">邮箱不能为空，请重新输入或取消!</string>
+	<string name="privacy_email_invalid_prompt">请输入有效的邮箱地址!</string>
+	<string name="privacy_change_email_title">设置密码重置邮箱</string>
+	<string name="privacy_set_auto_lock">设置自动锁时间</string>
+	<string name="privacy_set_auto_lock_prompt">请设置重入隐私空间需输入密码的最大等待时间</string>
+	<string name="privacy_default_notify_text">有新的系统消息</string>
+	<string name="privacy_set_notify_text_dialog_title">设置隐私通知文字</string>
+	<string name="privacy_set_msg_notify_icon_dialog_title">设置隐私短信通知图标</string>
+	<string name="privacy_set_call_in_notify_icon_dialog_title">设置隐私来电通知图标</string>
+
+	<string name="intercept_black_list">黑名单</string>
+	<string name="intercept_white_list">白名单</string>
+
+	<string name="privacy_auto_msg_list_select_text">选择</string>
+	<string name="privacy_auto_msg_list_delete_text">删除</string>
+	<string name="privacy_auto_msg_list_edit_text">编辑</string>
+	<string name="button_add_text">添加</string>
+	<string name="privacy_contact_blocked_type_normal">正常接听</string>
+	<string name="privacy_contact_blocked_type_hangup">立即挂断</string>
+	<string name="privacy_contact_menu_add">添加联系人</string>
+	<string name="privacy_contact_menu_import">导入联系人</string>
+	<string name="privacy_contact_menu_delete_select">批量删除</string>
+	<string name="privacy_contact_menu_select_all">全选</string>
+	<string name="privacy_contact_menu_unselect_all">取消全选</string>
+	<string name="privacy_contact_menu_delete_action">删除</string>
+	<string name="privacy_contact_add_dialog_title">手动添加隐私联系人</string>
+	<string name="privacy_contact_add_number_text">电话号码</string>
+	<string name="privacy_contact_add_contact_name">联系人姓名</string>
+	<string name="privacy_contact_add_block_type_text">来电处理方式</string>
+	<string name="privacy_contact_add_button_save">保存</string>
+	<string name="privacy_contact_add_optional_text">选填</string>
+	<string name="privacy_contact_add_essential_text">必填</string>
+
+	<string name="sms_remind">超级短信提醒</string>
+	<string name="sure_del_the_list">确定删除该名单吗？</string>
+	<string name="phone_number">号码 :</string>
+	<string name="remark">备注 :</string>
+	<string name="hint_required_text">必填</string>
+	<string name="hint_optional_text">选填</string>
+	<string name="edit_black_list">编辑黑名单</string>
+	<string name="edit_white_list">编辑白名单</string>
+	<string name="phone_number_not_empty">号码不能为空!</string>
+	<string name="input_valid_number">请输入有效的号码!</string>
+
+	<string name="input_valide_mobile">请输入有效的手机号码</string>
+	<string name="input_mobile_as_rule">请输入11位的手机号或以区号为开头的固话号码</string>
+	<string name="add_black_list">添加黑名单</string>
+	<string name="add_white_list">添加白名单</string>
+	<string name="send_sms_phone_num">发短信到 %1$s</string>
+
+	<string name="privacy_contact_set_blocked_type_prompt">请选择来电处理方式</string>
+	<string name="privacy_contact_call">呼叫</string>
+	<string name="privacy_contact_send_msg">发短信</string>
+	<string name="privacy_contact_modify">修改</string>
+	<string name="privacy_contact_delete">删除</string>
+	<string name="privacy_contact_add_existed">该号码已存在!</string>
+	<string name="privacy_contact_add_failed">添加隐私联系人失败!</string>
+	<string name="privacy_contact_import_from_contacts">从联系人导入</string>
+	<string name="privacy_contact_import_from_calllog">从通话记录导入</string>
+	<string name="privacy_contact_import_from_sms">从短信记录导入</string>
+	<string name="privacy_contact_import_title">导入隐私联系人</string>
+	<string name="privacy_contact_import_action">导入</string>
+	<string name="privacy_auto_msg_edit_dialog_title">编辑自动短信内容</string>
+	<string name="manually_add">手动添加</string>
+	<string name="add_from_mobile_contact">从手机联系人添加</string>
+	<string name="add_from_sim">从SIM卡联系人添加</string>
+	<string name="add_from_log">从通话记录添加</string>
+	<string name="add_from_sms">从短信列表添加</string>
+	<string name="add_black_area">添加黑名单地区</string>
+	<string name="add_white_area">添加白名单地区</string>
+	<string name="add_list_complete">添加完成!</string>
+	<string name="number_already_exist">该号码已存在</string>
+
+	<string name="request_mssage">数据加载中,请稍侯....</string>
+	<string name="contacts_exist">共 %1$d 个手机联系人</string>
+	<string name="all_select">全选</string>
+	<string name="load_from_sim_error">SIM卡不可用!</string>
+	<string name="sim_contacts_exist">共 %1$d 个SIM卡联系人</string>
+	<string name="call_log_contacts_exist">共 %1$d 个通话记录联系人</string>
+	<string name="sms_contacts_exist">共 %1$d 个短信联系人</string>
+	<string name="add_list_no_select">请选择需要加入的联系人</string>
+	<string name="all_exist_when_addlist">添加的号码已存在!</string>
+	<string name="kindroid_messenger_notice">超级短信提示</string>
+	<string name="privacy_contact_import_data_prompt">是否导入这些号码的短信和通话记录?导入成功后，将删除系统中的记录</string>
+	<string name="add_blacklist_from_region_desp">请输入地区中文名称或区号如[上海市]或[021]</string>
+	<string name="area_code_format">格式:XX省XX市</string>
+	<string name="add_list_from_region_empty_prompt">输入不能为空!</string>
+	<string name="add_list_from_region_code_error">请输入有效的区号!</string>
+	<string name="add_list_from_region_code_unexist">该城市没有相应的区号，请重新输入!</string>
+	<string name="add_region_code_unexist">该区号不存在!</string>
+	<string name="area_code_existed">该区号已存在!</string>
+	<string name="area_existed">该地区已存在!</string>
+	<string name="edit_blacklist_area_list">编辑黑名单地区</string>
+	<string name="edit_whitelist_area_list">编辑白名单地区</string>
+	<string name="update_suc">更改成功</string>
+
+	<string name="restore">恢复</string>
+	<string name="select_content_to_delete">请选择需要删除的内容!</string>
+	<string name="select_sms_to_recover">请选择需要恢复的内容!</string>
+	<string name="sure_del_the_sms">确定删除该短信？</string>
+	<string name="sure_del_the_keyword">确定删除该关键字？</string>
+	<string name="sure_restore_the_sms">确定恢复该短信？</string>
+
+	<string name="back_to_inbox">恢复到短信收件箱</string>
+	<string name="add_phonenum_to_blacklist">添加 %1$s 到黑名单</string>
+	<string name="add_phonenum_to_whitelist">添加 %1$s 到白名单</string>
+	<string name="save_phonenum_as_contact">保存 %1$s 为联系人</string>
+	<string name="call_phonenum">呼叫 %1$s</string>
+	<string name="back_sms_to_phone">给 %1$s 发短信</string>
+	<string name="select_intercept_model">选择拦截模式</string>
+	<string name="default_model">当前模式：</string>
+	<string name="defaults">默认</string>
+	<string name="intercept_key_word_text">拦截关键字设置</string>
+	<string name="intercept_key_word_desp">设置您所需拦截短信的关键字</string>
+	<string name="intercept_mode_setting_title">拦截模式设置</string>
+
+
+
+
+
+	<string name="privacy_message_menu_restore">恢复</string>
+	<string name="privacy_message_item_sum_format">(%1$d)</string>
+	<string name="privacy_message_item_click_dialog_reply_text">回复短信</string>
+	<string name="privacy_message_item_click_dialog_delete_text">删除该会话</string>
+	<string name="privacy_message_item_click_dialog_restore_text">恢复该会话到手机</string>
+	<string name="privacy_lock_pwd_input_hint">请在此输入解锁密码</string>
+	<string name="privacy_lock_pwd_input_dialog_title">设置隐私密码</string>
+	<string name="privacy_lock_pwd_input_email_prompt">重置密码接收邮箱，选填</string>
+
+
+	<string name="privacy_unlock_ime_action_label">解锁</string>
+	<string name="privacy_contact_modify_dialog_title">修改隐私联系人</string>
+	<string name="theme_activity_title">主题</string>
+
+	<string name="keyword_setting">关键字设置</string>
+	<string name="intercept_keyword_hint">请输入您要拦截的关键字</string>
+	<string name="intercept_add_text">添加</string>
+	<string name="intercept_keyword_exist">关键字已存在，请重新输入!</string>
+	<string name="search_keyword_error">关键字无效,请重新输入!</string>
+	<string name="add_keyword">添加关键字</string>
+	<string name="select_mode_intercept">选择模式拦截</string>
+	<string name="privacy_key_board_delete">清空</string>
+
+
+	<string name="safe_your_mobile">超级短信时刻保护着您的手机</string>
+
+
+	<string name="menu_theme_item">主题</string>
+	<string name="menu_setting_item">设置</string>
+	<string name="menu_advance_item">高级</string>
+	<string name="menu_feeback_item">反馈</string>
+	<string name="menu_about_item">关于</string>
+	<string name="category_name">名字:</string>
+
+	<!-- menu setting -->
+	<string name="menu_setting_switch_open">开</string>
+	<string name="menu_setting_switch_close">关</string>
+	<string name="menu_setting_signature">短信签名</string>
+	<string name="menu_setting_signature_desc">在发送的每条短信后，加入自己的个人签名</string>
+	<string name="menu_setting_signature_cotent">签名内容</string>
+	<string name="menu_setting_signature_cotent_desc">设置短信签名的内容</string>
+	<string name="menu_setting_dialog_desc">如果您喜欢我们的产品，请勾选下面的选项，将选项的文字加到您的短信签名之后以支持我们，谢谢
+	</string>
+	<string name="menu_setting_support_desc">（由超级短信发送）</string>
+	<string name="menu_setting_from_in_sms">由超级短信发送</string>
+	<string name="menu_setting_content_not_null">签名内容不能为空</string>
+
+	<string name="theme_enable">启用</string>
+	<string name="privacy_pwd_length_error">请输入4位密码</string>
+	<string name="theme_version_prefix">版本：</string>
+
+	<string name="add_collect_category">添加分类</string>
+	<string name="the_category_has_exsits">该分类已经存在</string>
+	<string name="add_category_error">添加错误,请重试</string>
+	<string name="add_category_suc">添加成功</string>
+	<string name="collect_list">收藏列表</string>
+	<string name="collect_detail">收藏详细</string>
+	<string name="forward">转发</string>
+	<string name="sure_del_the_collect">确定删除该收藏吗？</string>
+
+
+
+
+	<string name="privacy_settings_message_ring_title">设置隐私短信铃声</string>
+	<string name="privacy_delcontact_restore_prompt_text">删除隐私联系人后是否将隐私短信恢复到系统？</string>
+	<string name="privacy_add_contact_prompt_text">将这(些)号码添加为隐私联系人，会同时将这(些)号码已有的短信和通话记录导入隐私空间.
+	</string>
+	<string name="delete_confirm_prompt_text">确定删除吗?</string>
+	<string name="feedback_activity_title">建议反馈</string>
+	<string name="feedback_type">反馈类型</string>
+	<string name="feedback_select_prompt_text">请选择</string>
+	<string name="feedback_email">请输入您的邮箱，以便与您联系（选填）</string>
+	<string name="feedback_desp">描述</string>
+	<string name="feedback_submit">提交</string>
+	<string name="feedback_type_input_prompt">请选择反馈类型</string>
+	<string name="feedback_desp_input_prompt">请输入描述信息</string>
+	<string name="feedback_succ_text">反馈成功</string>
+	<string name="feedback_fail_text">网络不可用，请稍后再试!</string>
+	<string name="feedback_fail_prompt">反馈失败，请稍后再试!</string>
+	<string name="upgrade_prompt_dialog_title">发现新版本</string>
+	<string name="upgrade_prompt_repeat_confirm">有新版本时提示</string>
+	<string name="upgrade_prompt_button_ok">更新</string>
+	<string name="upgrade_prompt_version">版本:</string>
+	<string name="upgrade_prompt_releasenote_title">更新内容:</string>
+	<string name="upgrade_prompt_downloading_description">是否立即下载更新？</string>
+	<string name="sdcard_noexist">SD卡不存在!</string>
+	<string name="upgrade_cancel_prompt_text">确定取消更新吗？</string>
+	<string name="upgrade_downloading_text">正在下载安装包,请稍候...</string>
+	<string name="has_not_read_sms">未读信息</string>
+	<string name="intercept_sms">拦截信息</string>
+	<string name="sure_exist_app">确定退出超级短信吗?</string>
+
+
+	<string name="sms_content">短信内容</string>
+
+	<string name="privacy_change_dispaly_text_overlength">输入的字符数不能超过%1$d!</string>
+	<string name="privacy_unlock_pwd_error">密码错误!</string>
+	<string name="privacy_add_contact_existed">该隐私号码已存在!</string>
+
+
+	<string name="edit_category">编辑分类</string>
+
+	<string name="button_yes">是</string>
+	<string name="button_no">否</string>
+	<string name="category_update_suc">更改成功</string>
+
+	<string name="category_update_faile">更改失败</string>
+
+	<string name="sure_del_the_category">确定删除该分类吗?</string>
+	<string name="select_the_item_mark">请选择需要标记为已读的选项</string>
+	<string name="select_the_item_del">请选择需要删除的选项</string>
+	<string name="sure_del_the_item">确认删除该选项?</string>
+	<string name="collect_success">收藏成功!</string>
+	<string name="collect_fail">收藏失败!</string>
+	<string name="sim_absent_prompt">SIM卡不可用，将不能发送短信!</string>
+	<string name="upgrade_down_error_prompt">下载升级包出错，请稍后再试!</string>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

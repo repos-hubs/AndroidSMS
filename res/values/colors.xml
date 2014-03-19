@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 纯黑色 -->
+	<color name="black">#000000</color>
+	<!-- 背景色，用于所有列表的背景 -->
+	<color name="bg_color">#ebebeb</color>
+	<!-- 浅黑色,用于所有效果图中的黑色文字 -->
+	<color name="light_black">#202020</color>
+	<!-- 浅蓝色,用于所有界面中的蓝色文字，如会话列表中的短信内容 -->
+	<color name="light_blue">#006576</color>
+	<!-- 浅黄色，用于所有界面中的黄色文字，如会话列表中的地区和时间 -->
+	<color name="light_yellow">#c28d1a</color>
+	<!-- 深蓝色，用于短信详情中接收短信内容的文字 -->
+	<color name="dark_blue">#004656</color>
+	<!-- 棕色，用于短信详情中发送短信内容的文字 -->
+	<color name="brown">#5a3e00</color>
+	<!-- 提示文字颜色，用于各种输入框中的提示文字 -->
+	<color name="hint_color">#727272</color>
+	<!-- <color name="button_color">#004656</color> -->
+	<!-- 联系人拼音提示字母颜色，在输入联系人界面，联系人列表最右边的提示字母 -->
+	<color name="contact_char">#757575</color>
+	<!-- 割线的颜色值 -->
+	<color name="item_line_color">#BCBCBC</color>
+	<color name="privacy_item_bg_forgreen">#c3e6b2</color>
+	<color name="privacy_item_bg_forblue">#6de3f2</color>
+	<color name="light_green">#a3c990</color>
+	<color name="sms_contact_tab_title_color">#808080</color>
+	<color name="privacy_item_bg_forred">#ffeab2</color>
+	
+		<!-- 第二套主题背景色，用于所有列表的背景 -->
+	<color name="green_bg_color">#F5F5F5</color>
+	
+	
+	<color name="white">#FFFFFF</color>
+	<color name="grey">#979898</color>
+	<color name="red">#FF0000</color>
+	<color name="blue">#0000FF</color>
+	<color name="yellow">#fed56b</color>
+	<color name="textColor">#333333</color>
+	<color name="lightBlue">#ff00cccc</color>
+	<color name="darkBlue">#ff0099cc</color>
+	<color name="orange">#fe8725</color>
+	<color name="dark_green">#448E2D</color>
+	<!-- <color name="intercept_text">#C28D1A</color> -->
+	<!-- dialogue -->
+	<color name="dialogue_title">#00657B</color>
+	<color name="list_msg_color">#00657B</color>
+	<color name="msg_dialogue_detail_blue_text">#004656</color>
+	<color name="privacy_bg_color">#E8E1C5</color>
+	<color name="privacy_button_off">#ECC268</color>
+	<color name="privacy_button_on">#DC9F19</color>
+	
+	<color name="shadow_text_color">#004656</color>
+	<color name="text_default_color">#BDBDBD</color>
+	<color name="green">#6CBD45</color>
+	
+	<color name="sms_dialogue_right_time">#939393</color>
+	<color name="sms_dialogue_left_time">#6BBC44</color>
+	<color name="sms_dialogue_left_text">#2D8A00</color>
+	<color name="intercept_text_focuse_color">#5addef</color>
+	<color name="green_intercept_text_focuse_color">#38ab00</color>
+	
+	
+	<color name="red_intercept_text_focuse_color">#ffba00</color>
+	
+	<color name="red_bg_color">#FFFFFF</color>
+	
+	<color name="light_black_text_color">#454545</color>
+	
+	<color name="light_yellow_text_color">#C47300</color>
+	
+	
+	
+	
+	
+	
+</resources>

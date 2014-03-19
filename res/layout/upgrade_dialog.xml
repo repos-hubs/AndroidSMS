@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_height="wrap_content" android:layout_width="wrap_content"
+	android:layout_gravity="center" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:gravity="center"
+		android:layout_gravity="center_horizontal" android:background="@drawable/dialog_bg_top"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:text="@string/upgrade_prompt_dialog_title"
+			android:layout_gravity="center_vertical" android:layout_height="wrap_content"
+			android:textSize="24sp" android:textColor="@color/light_black"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:background="@drawable/dialog_bg_bottom">
+		<LinearLayout android:id="@+id/version_desp_linear"
+			android:gravity="center_vertical" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:textColor="@color/black"
+				android:paddingLeft="10dp" android:textSize="15sp"
+				android:textStyle="bold" android:paddingTop="5dp"
+				android:text="@string/upgrade_prompt_version" android:gravity="left|center_vertical"
+				android:id="@+id/down_des" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+			<TextView android:layout_marginLeft="3dp" android:textColor="@color/black"
+				android:id="@+id/upgrade_version" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"  android:paddingLeft="3dip" android:paddingRight="3dip"
+			android:visibility="gone" android:id="@+id/progress_linear"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<ProgressBar android:layout_margin="5dp"
+				android:id="@+id/downloadingProgress" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal"></ProgressBar>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:id="@+id/upgrade_prompt_linear" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:paddingBottom="5dp"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView android:textColor="@color/black"
+					android:paddingLeft="10dp" android:textSize="15sp"
+					android:text="@string/upgrade_prompt_releasenote_title"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				<TextView android:paddingRight="5dp" android:textColor="@color/black"
+					android:isScrollContainer="true" android:paddingLeft="10dp"
+					android:textSize="12dp" android:paddingTop="3dip"
+					android:paddingBottom="3dip" android:id="@+id/releasenotes_text"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+					android:background="@color/white"></TextView>
+			</LinearLayout>
+			<View android:layout_marginTop="5dp" android:background="@drawable/fengexian"
+			android:layout_marginLeft="4dip" android:layout_marginRight="4dip"
+				android:layout_marginBottom="5dp" android:layout_width="fill_parent"
+				android:layout_height="1dp"></View>
+			<LinearLayout android:layout_marginBottom="5dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:layout_marginLeft="10dp"
+					android:textColor="@color/black" android:textSize="15sp"
+					android:text="@string/upgrade_prompt_downloading_description"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+			<LinearLayout android:gravity="center_vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<CheckBox android:layout_marginLeft="10dp"
+					android:background="@null" android:id="@+id/upgrade_prompt_repeat"
+					android:focusable="false" android:layout_gravity="center_vertical"
+					android:button="@drawable/checkbox_button" android:layout_width="40dp"
+					android:layout_height="40dp" android:checked="true"></CheckBox>
+				<TextView android:textColor="@color/black"
+					android:textSize="15sp" android:text="@string/upgrade_prompt_repeat_confirm"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:gravity="center_horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+			<Button android:background="@drawable/button_bg_main_selector"
+				android:textColor="@color/light_black" android:text="@string/upgrade_prompt_button_ok"
+				style="@style/TextShadowStyle" android:id="@+id/downloadOkBtn"
+				android:textSize="22sp" android:clickable="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:layout_marginLeft="10dp"
+				android:background="@drawable/button_bg_main_selector"
+				android:textColor="@color/light_black" android:text="@android:string/cancel"
+				style="@style/TextShadowStyle" android:id="@+id/downloadCancelBtn"
+				android:textSize="22sp" android:clickable="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

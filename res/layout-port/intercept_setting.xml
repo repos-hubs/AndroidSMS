@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="@drawable/red_theme_bg" />
+	
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_weight="1" android:layout_height="fill_parent"
+		android:fillViewport="true" android:padding="5dp">
+		<LinearLayout android:layout_height="fill_parent"
+			android:isScrollContainer="true" android:layout_width="fill_parent"
+			android:orientation="vertical">
+			<RelativeLayout android:id="@+id/intercept_mode_rl"
+				android:layout_marginTop="5dip" android:gravity="center_vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="@drawable/red_sms_dialogue_messenger_item_bg">
+				<ImageView android:id="@+id/intercept_model_iv"
+					android:layout_marginTop="20dip" android:layout_height="wrap_content"
+					android:layout_marginRight="10dp" android:layout_alignParentRight="true"
+					android:layout_width="wrap_content" android:src="@drawable/arrow_02"></ImageView>
+				<TextView android:id="@+id/intercept_tag_model_tv"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="@color/black" android:layout_marginRight="2dp"
+					android:textSize="20sp" android:text="@string/select_intercept_model"></TextView>
+				<TextView android:id="@+id/default_tag_model_tv"
+					android:layout_marginTop="2dip" android:layout_below="@id/intercept_tag_model_tv"
+					android:layout_alignLeft="@id/intercept_tag_model_tv"
+					android:layout_width="wrap_content" android:textColor="@color/light_yellow_text_color"
+					android:layout_height="wrap_content" android:layout_marginRight="2dp"
+					android:textSize="17sp" android:text="@string/default_model"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/default_tag_model_tv"
+					android:layout_alignTop="@id/default_tag_model_tv"
+					android:layout_below="@id/intercept_tag_model_tv" android:textSize="17sp"
+					android:layout_width="wrap_content" android:textColor="@color/light_yellow_text_color"
+					android:id="@+id/current_intercept_mode" android:text="@string/defaults"></TextView>
+			</RelativeLayout>
+
+
+			<RelativeLayout android:id="@+id/key_word_rl"
+				android:layout_marginTop="5dip" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/red_sms_dialogue_messenger_item_bg">
+				<ImageView android:id="@+id/intercept_model_iv"
+					android:layout_marginTop="20dip" android:layout_height="wrap_content"
+					android:layout_marginRight="10dp" android:layout_alignParentRight="true"
+					android:layout_width="wrap_content" android:background="@drawable/arrow_02"></ImageView>
+
+				<TextView android:id="@+id/key_word_tag_tv"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textColor="@color/black" android:layout_marginRight="2dp"
+					android:textSize="20sp" android:text="@string/intercept_key_word_text"></TextView>
+				<TextView android:layout_width="wrap_content"
+					android:layout_marginTop="2dip" android:textColor="@color/light_yellow_text_color"
+					android:layout_height="wrap_content" android:layout_marginRight="2dp"
+					android:textSize="17sp" android:layout_below="@id/key_word_tag_tv"
+					android:layout_alignLeft="@id/key_word_tag_tv" android:text="@string/intercept_key_word_desp"></TextView>
+
+
+			</RelativeLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

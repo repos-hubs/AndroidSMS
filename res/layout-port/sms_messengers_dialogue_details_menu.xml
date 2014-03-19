@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/menuLayout"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteMessageTextView"
+        android:text="@string/sms_dialogue_delete"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/copyMessageTextView"
+        android:text="@string/sms_dialogue_message_copy"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collectMessageTextView"
+        android:text="@string/sms_dialogue_title_collection"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forwardMessageTextView"
+        android:text="@string/sms_dialogue_message_forward"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

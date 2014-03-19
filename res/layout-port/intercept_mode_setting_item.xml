@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/red_sms_dialogue_messenger_item_bg">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+			android:layout_centerVertical="true" android:layout_marginLeft="10dp"
+			android:orientation="vertical" android:layout_toLeftOf="@+id/radio_linear">
+			<TextView android:layout_marginBottom="7dp"
+				android:textColor="@color/black" android:layout_height="wrap_content"
+				android:id="@+id/mode_title_tv" android:layout_width="wrap_content"
+				android:textSize="20sp"></TextView>
+			<TextView android:textColor="@color/light_yellow_text_color" android:textSize="17sp"
+				android:layout_height="wrap_content" android:id="@+id/mode_desp_tv"
+				android:layout_width="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentRight="true" android:id="@+id/radio_linear"
+			android:layout_marginLeft="5dp">
+			<RadioButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/radio_button"
+				android:focusable="false" android:focusableInTouchMode="false"
+				android:checked="false" android:clickable="false" android:button="@drawable/red_radio_button_bg"></RadioButton>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

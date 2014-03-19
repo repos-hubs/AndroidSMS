@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:background="@color/bg_color" android:orientation="vertical">
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/fengexian"></ImageView>
+    <LinearLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="fill_parent" android:gravity="center" android:id="@+id/privacy_callog_menu_delete" android:layout_marginTop="1dp">
+        <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/privacy_contact_menu_delete"></ImageView>
+        <TextView android:layout_marginTop="3dp" android:textColor="@color/light_black" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/privacy_contact_delete" android:textSize="17sp"></TextView>
+    </LinearLayout>
+    
+</LinearLayout>
